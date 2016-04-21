@@ -11,6 +11,8 @@ class TestFramer{
     System.out.println(str.toString());
   }
 
+
+//este codigo se usa para probar que todo lo demas funcione, le archivo test.txt
   public static void main(String[] args) throws FileNotFoundException, IOException{
     InputStream in1 = new FileInputStream("./test.txt");
     InputStream in = new FileInputStream("./test.txt");
