@@ -3,7 +3,8 @@ import java.io.*;
 public class LengthFramer implements Framer{
   public static final int MAXLENGHT = 65535;
   public static final int BYTEMASK  = 0xff; 
-
+ 
+ //in progres...
   private InputStream in;
 
   public LengthFramer(InputStream in){
