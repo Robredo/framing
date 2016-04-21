@@ -7,7 +7,7 @@ public class DelimFramer implements Framer{
   public DelimFramer(InputStream in){
     this.in = in;
   }
-
+// Analiza y encuentra el delimitador en el mensaje
   public void frameMsg(byte[] message, OutputStream out) throws IOException{
     for(byte b : message){
       if(b == DELIMITER)
@@ -17,7 +17,7 @@ public class DelimFramer implements Framer{
     out.write(DELIMITER); 
     out.flush();
   }
-
+// Analiza y encuentra el delimitador en el mensaje
   public byte[] nextMsg() throws IOException{
     ByteArrayOutputStream message = new ByteArrayOutputStream();
     int nextByte;
